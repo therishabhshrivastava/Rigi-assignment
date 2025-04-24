@@ -1,0 +1,623 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Hero Section */
+.site-header {
+    position: absolute;
+    top: 20px;
+    left: 160px;
+    z-index: 10;
+}
+
+.logo img {
+    width: 200px;
+}
+
+.hero {
+    position: relative;
+    background: url('assets/herobackground.jpg');
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1.4), rgba(0, 0, 0, 0.8));
+    z-index: 1;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hero h1 {
+    font-size: 56px;
+    line-height: 1.4;
+}
+
+.hero h1 span {
+    color: red;
+    font-size: 45px;
+}
+
+.downloadContainer {
+    text-decoration: none;
+}
+
+.downloadContainer:visited {
+    text-decoration: none;
+}
+
+.download-btn {
+    width: 50%;
+    margin-top: 25px;
+    padding: 10px;
+    font-size: 25px;
+    background: linear-gradient(to right, #ff2e63, #ff7746);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.download-btn img {
+    height: 25px;
+    width: 30px;
+}
+
+.download-btn:hover {
+    transform: scale(0.95);
+    background: linear-gradient(to left, #ff2e63, #ff7746);
+}
+
+.hero-image img {
+    height: 650px;
+    object-fit: contain;
+    margin-top: 75px;
+    margin-left: 55px;
+
+}
+
+/* Main Section */
+.main .background {
+    background: url('assets/mainBlur.webp');
+    height: 93vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.main .overlay {
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    backdrop-filter: blur(20px);
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+}
+
+.main .main-heading {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+.main .cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+
+}
+
+.main .card {
+    width: 75%;
+    border-radius: 10px;
+}
+
+.main .main-heading span {
+    color: red;
+}
+
+.main .features {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.main .feature {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-size: 1.2rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: auto;
+
+}
+
+.main .feature>div {
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 35px;
+}
+
+.main .feature>div img {
+    margin: auto;
+    padding: 10px;
+    width: 60px;
+}
+
+.main .downloadContainer {
+    text-decoration: none;
+}
+
+.main .downloadContainer:visited {
+    text-decoration: none;
+}
+
+.main .download-btn {
+    width: auto;
+    margin: auto;
+    padding: 10px;
+    font-size: 30px;
+    background: linear-gradient(to right, #ff2e63, #ff7746);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.main .download-btn img {
+    height: 25px;
+    width: 30px;
+}
+
+.main .download-btn:hover {
+    transform: scale(0.95);
+    background: linear-gradient(to left, #ff2e63, #ff7746);
+}
+
+/* User Love Section */
+.user-love {
+    margin-top: 90px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.user-love h2 {
+    font-size: 43px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.user-love .testimonials {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    gap: 20px;
+}
+
+.user-love .card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 32px;
+    padding: 40px 35px;
+    width: 80%;
+    backdrop-filter: blur(30px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 100px rgba(255, 0, 120, 0.3);
+    z-index: 1;
+}
+
+.user-love .card::before {
+    content: '';
+    position: absolute;
+    top: -60px;
+    left: -60px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle at center, rgba(255, 0, 100, 0.3), transparent 70%);
+    border-radius: 50%;
+    z-index: -1;
+    filter: blur(100px);
+}
+
+.user-love .quote {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    font-size: 80px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.07);
+    z-index: 0;
+    line-height: 1;
+}
+
+.user-love .text {
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+.user-love .user {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.user-love .user img {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.user-love .name {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.user-love .location {
+    font-size: 13px;
+    color: teal;
+}
+
+/* Footer Section */
+.lit-footer {
+    background: white;
+    color: black;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Top Section */
+.footer-top {
+    background: linear-gradient(90deg, #fc653b, #f73b81);
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
+}
+
+.footer-top h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.footer-top .download-btn {
+    font-size: 25px;
+    font-weight: 600;
+    background: white;
+    color: black;
+    border: none;
+    padding: 18px 40px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: auto;
+    width: auto;
+}
+
+.footer-top .download-btn img {
+    width: 30px;
+    margin-top: 5px;
+}
+
+.footer-top .download-btn span {
+    margin-left: 10px;
+}
+
+.footer-top .download-btn:hover {
+    filter: invert(1);
+}
+
+/* Middle Section */
+/* Left Section */
+.footer-middle {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 80px;
+    flex-wrap: wrap;
+}
+
+.footer-left {
+    max-width: 60%;
+}
+
+.footer-logo {
+    height: 48px;
+    margin-bottom: 15px;
+}
+
+.footer-desc {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-address,
+.footer-phone {
+    font-size: 16px;
+    color: teal;
+}
+
+/* Right Section */
+.footer-right {
+    text-align: center;
+}
+
+.footer-right h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.playstore-btn {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.playstore-btn img {
+    width: 22px;
+    margin-right: 8px;
+}
+
+.playstore-btn:hover {
+    filter: invert(1);
+}
+
+/* Divider */
+.footer-divider {
+    border: none;
+    border-top: 1.5px solid teal;
+    margin: 0 80px;
+}
+
+/* Bottom Section */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 80px;
+    flex-wrap: wrap;
+    background: white;
+}
+
+.footer-address {
+    width: 80%;
+}
+
+.footer-phone {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    margin-right: 25px;
+    text-decoration: none;
+    color: teal;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-copy {
+    color: teal;
+    font-size: 14px;
+}
+
+
+/* Responsive for Small Screens */
+@media (max-width: 768px) {
+    .site-header {
+        left: 20px;
+        top: 10px;
+    }
+
+    .logo img {
+        width: 140px;
+    }
+
+    .hero .container {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+        margin-top: 100px;
+    }
+
+    .hero h1 span {
+        font-size: 28px;
+    }
+
+    .download-btn {
+        width: 60%;
+        margin: auto;
+        margin-top: 30px;
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .download-btn img {
+        height: 20px;
+        width: 24px;
+    }
+
+    .hero-image img {
+        height: 380px;
+        margin: 30px auto 0;
+        margin-left: 0;
+    }
+
+    .main .background {
+        height: 48vh;
+    }
+
+    .main .main-heading {
+        font-size: 1rem;
+        padding: 0 10px;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    .main .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: 85%;
+        margin: auto;
+    }
+
+    .main .card {
+        width: 95%;
+    }
+
+    .main .features {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+
+    }
+
+    .main .feature {
+        width: auto;
+        justify-content: center;
+        font-size: 0.5rem;
+    }
+
+    .main .feature:nth-child(3) {
+        width: auto;
+
+    }
+
+    .main .feature>div {
+        width: auto;
+        height: auto;
+    }
+
+    .main .feature>div img {
+        width: 30px;
+        padding: 5px;
+    }
+
+    .main .download-btn {
+        width: 80%;
+        font-size: 20px;
+        padding: 12px 0;
+    }
+
+    .main .download-btn img {
+        width: 24px;
+        height: 20px;
+    }
+
+    .user-love .testimonials {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-top h2 {
+        font-size: 30px;
+    }
+
+    .footer-top .download-btn {
+        font-size: 16px;
+        padding: 12px 24px;
+    }
+
+    .footer-top .download-btn img {
+        width: 20px;
+        margin-left: 10px;
+    }
+
+    .footer-middle {
+        flex-direction: column;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .footer-left {
+        max-width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .footer-address {
+        font-size: 14px;
+        margin: 10px auto;
+    }
+
+
+    .playstore-btn {
+        margin: auto;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 10px;
+    }
+}
