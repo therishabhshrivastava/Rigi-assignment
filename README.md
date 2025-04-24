@@ -12,8 +12,7 @@ Build a Landing Page of Lit Vibes.
 - `CSS`
 - `Javascript`
 
-### **Live Site**   https://amazon-landingpage-fang.netlify.app/
-
+### **Live Site**   https://therishabhshrivastava.github.io/rigi-assignment/
 
 
 ## Demo 
